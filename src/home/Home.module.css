@@ -1,0 +1,82 @@
+/* HEADER & NAVIGATION */
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1f2041;
+}
+
+header {
+  padding: 0 8rem;
+  margin-bottom: 8rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: #1f2041;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  color: beige;
+}
+
+nav a:hover {
+  background-color: #4b3f72;
+  color: #ffffff;
+  transition: all 300ms;
+}
+
+/* HERO */
+.hero {
+  background-color: #4b3f72;
+  color: azure;
+  display: flex;
+  align-items: center;
+  padding: 6rem;
+}
+
+.hero-text {
+  padding: 0 5rem;
+  width: 50%;
+}
+
+.hero-text h2 {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text p {
+  line-height: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 6rem;
+}
+
+.hero-text a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: #417b5a;
+  padding: 1rem 1.6rem;
+  border-radius: 50px;
+  color: #f5f5dc;
+}
+
+.hero-text a:hover {
+  background-color: #1f2041;
+  color: #f5f5dc;
+  transition: all 300ms;
+}
+
+.hero-image {
+  width: 50%;
+}
+.hero-image img {
+  width: 90%;
+  clip-path: ellipse(350px 320px at 100% 100%);
+}
+
+/* COURSES */
