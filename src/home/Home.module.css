@@ -1,43 +1,13 @@
-/* HEADER & NAVIGATION */
-h1 {
-  font-size: 2rem;
-  font-weight: 900;
-  color: #1f2041;
-}
-
-header {
-  padding: 0 8rem;
-  margin-bottom: 8rem;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  background-color: #1f2041;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  color: beige;
-}
-
-nav a:hover {
-  background-color: #4b3f72;
-  color: #ffffff;
-  transition: all 300ms;
-}
-
 /* HERO */
 .hero {
+  /* background: linear-gradient(315deg, #417b5a, #4b3f72); */
+
   background-color: #4b3f72;
   color: azure;
   display: flex;
   align-items: center;
   padding: 6rem;
+  margin-bottom: 8rem;
 }
 
 .hero-text {
@@ -68,7 +38,7 @@ nav a:hover {
 .hero-text a:hover {
   background-color: #1f2041;
   color: #f5f5dc;
-  transition: all 300ms;
+  transition: all 0.3s;
 }
 
 .hero-image {
@@ -80,3 +50,50 @@ nav a:hover {
 }
 
 /* COURSES */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  row-gap: 0;
+  padding: 0 11rem;
+  margin-bottom: 8rem;
+}
+
+.courses-grid a {
+  text-decoration: none;
+}
+
+.courses-grid .intro-tile {
+  /* background: linear-gradient(45deg, #417b5a, #4b3f72); */
+  background-color: #465d66;
+  color: #f5f5dc;
+  /* width: 30%; */
+  padding: 4rem;
+  border-radius: 2rem;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 11rem;
+  background-color: #1f2041;
+  /* color: #1f2041; */
+  /* background: linear-gradient(45deg, #1f2041, #4b3f72); */
+}
+
+footer {
+  color: #f5f5dc;
+}
+
+footer h2 {
+  font-size: 1.8rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
