@@ -36,3 +36,17 @@ nav button:hover {
   color: #ffffff;
   transition: all 0.3s;
 }
+
+nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links .login,
+.nav-links .signup {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1f2041;
+}

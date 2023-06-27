@@ -33,7 +33,7 @@ function Home() {
               transformative journery of discovery with our user-friendly <br />
               interface high-quality educational resources .
             </p>
-            <NavLink to="/">Get Started</NavLink>
+            <NavLink to="signup">Get Started</NavLink>
           </div>
           <div className={styles["hero-image"]}>
             <img src={heroImg} alt="A girl using a laptop" />

@@ -3,43 +3,34 @@ import React from "react";
 // Components
 import SubCourse from "../../components/SubCourse";
 
-// Images
-import html from "../../../images/html.jpg";
-import WebImg from "../../../images/WebDevImg.jpg";
-import ReactImg from "../../../images/React.jpg";
-
 // CSS Styles
 import styles from "./style.module.css";
+
+// Courses Array
+import { AllCourses } from "../../components/SubCourse";
+import { Link } from "react-router-dom";
 
 function WebDev() {
   return (
     <div className={styles["web-dev"]}>
-      <SubCourse
-        courseTitle={"React - The Complete Guide (Hooks, React Router, Redux)"}
-        coursePhoto={ReactImg}
-        courseTeacher={"Maximilian Schwarzmuller"}
-        coursePrice={"$79.99"}
-        courseRating={4.6}
-        // courseCategory={"Web Development"}
-      />
-
-      <SubCourse
-        courseTitle={"Build Responsive Real-World Websites with HTML & CSS"}
-        coursePhoto={html}
-        courseTeacher={"Jonas Schmedtmann"}
-        coursePrice={"$79.99"}
-        courseRating={4.7}
-        // courseCategory={"Web Development"}
-      />
-
-      <SubCourse
-        courseTitle={"The Complete Web Development BootCamp 2023"}
-        coursePhoto={WebImg}
-        courseTeacher={"Angela Yu"}
-        coursePrice={"$79.99"}
-        courseRating={4.7}
-        // courseCategory={"Web Development"}
-      />
+      {AllCourses.filter((c) => c.courseCategory === "web development").map(
+        (webdevp) => {
+          return (
+            <Link to={`/course/web-development/${webdevp.courseId}`}>
+              <SubCourse
+                courseTitle={webdevp.courseTitle}
+                coursePhoto={webdevp.coursePhoto}
+                courseTeacher={webdevp.courseTeacher}
+                coursePrice={webdevp.coursePrice}
+                courseRating={webdevp.courseRating}
+                courseId={webdevp.courseId}
+                courseCateogry={webdevp.courseCategory}
+                key={webdevp.courseId}
+              />
+            </Link>
+          );
+        }
+      )}
     </div>
   );
 }

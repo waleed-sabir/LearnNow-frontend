@@ -10,9 +10,17 @@ function RootLayout() {
           <Link to="/" className={styles["logo"]}>
             <h1>LearnNow</h1>
           </Link>
-          <NavLink to="/" className={styles["cta"]}>
-            <button>Get Started</button>
-          </NavLink>
+          <div className={styles["nav-links"]}>
+            <NavLink to="login" className={styles["login"]}>
+              {/* <button>Login</button> */}Login
+            </NavLink>
+            <NavLink to="signup" className={styles["signup"]}>
+              {/* <button>Sign up</button> */}Sign up
+            </NavLink>
+            <NavLink to="signup" className={styles["cta"]}>
+              <button>Get Started</button>
+            </NavLink>
+          </div>
         </nav>
       </header>
 
